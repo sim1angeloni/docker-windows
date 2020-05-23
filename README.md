@@ -73,6 +73,21 @@ You can change the Windows image used in the Dockerfiles updating the `FROM` lin
 * [Windows Server Core images](https://hub.docker.com/_/microsoft-windows-servercore)
 * [.NET Framework SDK images](https://hub.docker.com/_/microsoft-dotnet-framework-sdk)
 
+### DNS
+
+Make sure you set the DNS for your Docker installation, otherwise the containers will not be able to execute an `nslookup` and also, installing packages with `pip` will fail.
+
+You can set the DNS editing the JSON file of the Docker daemon. If you are using Docker Desktop for Windows, open the Settings page and go to the Docker Engine tab. Add the following code:
+
+```
+"dns": [
+  "8.8.8.8",
+  "8.8.4.4"
+]
+```
+
+Here I am using the Google DNS servers, but you can use your preferred DNS.
+
 ## Contributing
 
 Please submit a pull request to contribute to this repository and add new versions.
