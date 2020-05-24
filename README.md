@@ -38,7 +38,6 @@ This Dockerfile uses as a base one of the images built with Microsoft Visual Stu
 * [Git](https://git-scm.com)
 * [Perforce](https://www.perforce.com)
 * [Conan](https://conan.io)
-* [Meson](https://mesonbuild.com)
 
 To use this Dockerfile runs the following:
 ```
