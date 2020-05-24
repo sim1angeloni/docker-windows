@@ -21,7 +21,7 @@ WORKDIR C:\
 
 # VS BuildTools (MSVC 2017 - version 15)
 COPY .vsconfig C:\
-ADD https://aka.ms/vs/15/release/vs_BuildTools.exe vs_BuildTools.exe
+ADD https://aka.ms/vs/16/release/vs_BuildTools.exe vs_BuildTools.exe
 RUN vs_BuildTools.exe --config C:\.vsconfig --quiet --wait --norestart --nocache && `
     del /F vs_BuildTools.exe && `
     del /F .vsconfig
@@ -33,4 +33,4 @@ RUN vs_BuildTools.exe --config C:\.vsconfig --quiet --wait --norestart --nocache
 # =======================================================
 
 # Activate VS devenv
-ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Auxiliary\\Build\\vcvarsall.bat", "x64", "&&", "cmd"]
+ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Auxiliary\\Build\\vcvarsall.bat", "x64", "&&", "cmd"]
