@@ -40,7 +40,7 @@ RUN python3.exe /quiet /passive InstallAllUsers=1 PrependPath=1 Include_test=0 T
     "%ProgramFiles%\Python37\python3.exe" -m pip install conan==1.19.1 --upgrade
 
 # Python 2
-# ADD https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi python2.msi
+# ADD https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi python2.msi
 # RUN msiexec /i python2.msi /quiet /passive /norestart TARGETDIR="%ProgramFiles%\Python27" && `
 #     del /F python2.msi && `
 #     mklink "%ProgramFiles%\Python27\python2.exe" "%ProgramFiles%\Python27\python.exe" && `
