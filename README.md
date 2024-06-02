@@ -27,7 +27,7 @@ The list of Visual Studio workloads and components is available [here](https://d
 
 To use this Dockerfile runs the following:
 ```
-git clone https://github.com/sineang01/windows-dev.git
+git clone https://github.com/sim1angeloni/windows-dev.git
 cd windows-dev\win1903\msvc2017
 docker build . -t windows/1903/msvc:2017
 ```
@@ -41,7 +41,7 @@ This Dockerfile uses as a base one of the images built with Microsoft Visual Stu
 
 To use this Dockerfile runs the following:
 ```
-git clone https://github.com/sineang01/windows-dev.git
+git clone https://github.com/sim1angeloni/windows-dev.git
 cd windows-dev\generic-devenv
 docker build . -t windows/1903/devenv:latest
 ```
@@ -93,7 +93,7 @@ Please submit a pull request to contribute to this repository and add new versio
 
 ## Authors
 
-* **Simone Angeloni** - *Initial work* - [@sineang01](https://github.com/sineang01)
+* **Simone Angeloni** - *Initial work* - [@sim1angeloni](https://github.com/sim1angeloni)
 
 ## License
 
